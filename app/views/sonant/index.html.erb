@@ -38,7 +38,8 @@
     <div class="d-flex justify-content-between topbar">
       <div class="top-info">
         <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>08 Dinh Bat Tuy, Vinh, Vietnam</small>
-        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>Email@Example.com</small>
+        <small class="me-3 text-white-50"><%=link_to "Email@Example.com", contacts_path, class: 'fas fa-envelope me-2 text-secondary ' %> </small>
+
       </div>
       <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
       </div>
@@ -80,7 +81,6 @@
           <span class="text-secondary text-white-50">Call:  +16156678565</span>
         </div>
         <div class="d-flex align-items-center justify-content-center ms-4 ">
-          <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
         </div>
       </div>
     </nav>
@@ -103,8 +103,8 @@
             <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
             <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency</h1>
             <p class="mb-4 text-white fs-5 animated fadeInDown">.</p>
-            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-info rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-            <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+            <%=link_to "Read More", service_path, class: 'me-2 px-4  py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft'%>
+            <%=link_to "Contact", contacts_path, class: 'ms-2 px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight' %>
           </div>
         </div>
       </div>
@@ -115,8 +115,8 @@
             <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
             <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality VoiP Services You Really Need!</h1>
             <p class="mb-4 text-white fs-5 animated fadeInDown">Enterprise communications for the way you work.</p>
-            <a href="" class="me-2"><button type="button" class="px-4  py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-            <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+            <%=link_to "Read More", service_path, class: 'me-2 px-4  py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft'%>
+            <%=link_to "Contact", contacts_path, class: 'ms-2 px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight' %>
           </div>
         </div>
       </div>
