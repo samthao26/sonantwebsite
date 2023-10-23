@@ -1,0 +1,2 @@
+module UserappliesHelper
+end

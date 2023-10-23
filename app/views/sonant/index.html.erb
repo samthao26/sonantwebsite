@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HighTech - IT Solutions Website Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Spinner End -->
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark py-2 d-none d-md-flex">
+  <div class="container">
+    <div class="d-flex justify-content-between topbar">
+      <div class="top-info">
+        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>08 Dinh Bat Tuy, Vinh, Vietnam</small>
+        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>Email@Example.com</small>
+      </div>
+      <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid bg-primary">
+  <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-lg py-0">
+       <%=image_tag"logosonant.jpg", style: "width:50px;height:50px"%> &ensp;
+        <h1 class="text-white fw-bold d-block">Sonant</h1>
+      <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+          <%=link_to "Home", root_path, class: 'nav-link' %>
+            <%=link_to "About", about_path, class: 'nav-link' %>
+            <%=link_to "Services", service_path, class: 'nav-link' %>
+             <%=link_to "Job", jobs_path, class: 'nav-link' %>
+            <%=link_to "Contact", contacts_path, class: 'nav-link' %>
+
+        </div>
+      </div>
+      <div class="d-none d-xl-flex flex-shirink-0">
+        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+          <a href="" class="position-relative animated tada infinite">
+            <i class="fa fa-phone-alt text-white fa-2x"></i>
+            <div class="position-absolute" style="top: -7px; left: 20px;">
+              <span><i class="fa fa-comment-dots text-secondary"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex flex-column pe-4 border-end">
+          <span class="text-white-50">Have any questions?</span>
+          <span class="text-secondary text-white-50">Call:  +16156678565</span>
+        </div>
+        <div class="d-flex align-items-center justify-content-center ms-4 ">
+          <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Carousel Start -->
+<div class="container-fluid px-0">
+  <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Second slide"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active img-fluid" data-bs-interval="10000">
+        <%= image_tag "carousel-1.jpg", :alt => "First slide"%>
+        <div class="carousel-caption">
+          <div class="container carousel-content">
+            <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
+            <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency</h1>
+            <p class="mb-4 text-white fs-5 animated fadeInDown">.</p>
+            <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-info rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
+            <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" role="listbox">
+        <%= image_tag "carousel-2.jpg", :alt => "Second slide"%>
+        <div class="carousel-caption">
+          <div class="container carousel-content">
+            <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
+            <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality VoiP Services You Really Need!</h1>
+            <p class="mb-4 text-white fs-5 animated fadeInDown">Enterprise communications for the way you work.</p>
+            <a href="" class="me-2"><button type="button" class="px-4  py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
+            <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- Carousel End -->
+
+
+<!-- Fact Start -->
+<div class="container-fluid bg-secondary py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">5</h1>
+          <h5 class="text-white mt-1">Success in getting happy customer</h5>
+        </div>
+      </div>
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">7</h1>
+          <h5 class="text-white mt-1"> Successful business</h5>
+        </div>
+      </div>
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">10</h1>
+          <h5 class="text-white mt-1">Total clients who love Sonant</h5>
+        </div>
+      </div>
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">5</h1>
+          <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fact End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5 my-5">
+  <div class="container pt-5">
+    <div class="row g-5">
+      <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+        <div class="h-100 position-relative">
+          <%= image_tag "about-1.jpg", :class => "img-fluid w-75 rounded",:alt => "", :style => "margin-bottom:25%;"%>
+          <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+            <%= image_tag "about-2.jpg", :class => "img-fluid w-100 rounded",:alt => ""%>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+        <h5 class="text-primary">About Us</h5>
+        <h1 class="mb-4">About Sonant Agency And It's Innovative IT Solutions</h1>
+        <p>Sonant Consulting Group is a development group based in Vinh, Vietnam. We work with international clients who have difficulties implementing VoIP. Typically we work with small ISP/ITSPs, Inbound Call Centers, Property Management companies, etc. An array of customers all with unique telecom-related problems to be solved.</p>
+        <%=link_to"More Details", about_path, class: 'btn btn-secondary rounded-pill px-5 py-3 text-white'%>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+
+<!-- Services Start -->
+<div class="container-fluid services py-5 mb-5">
+  <div class="container">
+    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+      <h5 class="text-primary">Our Services</h5>
+      <h1>Services Built Specifically For Your Business</h1>
+    </div>
+    <div class="row g-5 services-inner">
+      <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+        <div class="services-item bg-light">
+          <div class="p-4 text-center services-content">
+            <div class="services-content-icon">
+              <i class="fa fa-solid fa-phone fa-7x mb-4 text-primary"></i>
+              <h4 class="mb-3">VoIP Services</h4>
+              <p class="mb-4">Registrar, Media Services, Provisioning Servers, VQM, CDR Collection</p>
+              <%=link_to "Read More", service_path, class: 'btn btn-secondary text-white px-5 py-3 rounded-pill' %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+        <div class="services-item bg-light">
+          <div class="p-4 text-center services-content">
+            <div class="services-content-icon">
+              <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
+              <h4 class="mb-3">Web Development</h4>
+              <p class="mb-4">Backend development in Ruby, Python, Go, or PHP
+                Integration with Asterisk, 2600hz, CUCM, Twilio, and Cloud Provider APIs</p>
+              <%=link_to "Read More", service_path, class: 'btn btn-secondary text-white px-5 py-3 rounded-pill' %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+        <div class="services-item bg-light">
+          <div class="p-4 text-center services-content">
+            <div class="services-content-icon">
+              <i class="fa fa-solid fa-phone-volume fa-7x mb-4 text-primary"></i>
+              <h4 class="mb-3">VoIP Troubleshooting</h4>
+              <p class="mb-4">Debugging signaling and media quality issues from Traces / Packet Captures</p>
+              <%=link_to "Read More", service_path, class: 'btn btn-secondary text-white px-5 py-3 rounded-pill'%>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Services End -->
+
+<!-- Contact End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+  <div class="container pt-5 pb-4">
+    <div class="row g-5">
+      <div class="col-lg-3 col-md-6">
+        <%=link_to "Home", root_path, class: 'nav-link' %>
+          <h1 class="text-white fw-bold d-block">Sonant</h1>
+        <p class="mt-4 text-light">Sonant Consulting Group works with international clients who have difficulties implementing VoIP. An array of customers all with unique telecom-related problems to be solved</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <a href="#" class="h3 text-secondary"></a>
+        <div class="mt-4 d-flex flex-column help-link"></div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <%=link_to" Contact Us", contacts_path, class: "h3 text-secondary"%>
+        <div class="text-white mt-4 d-flex flex-column contact-link">
+          <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 08 Dinh Bat Tuy, Vinh, Vietnam</a>
+          <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>  +16156678565</a>
+          <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@exmple.con</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lhttps://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="javascript/application.js"></script>
+</div>
+</body>
+
+</html>
